@@ -1,0 +1,21 @@
+import 'dart:io';
+void main()
+{
+  double s;
+  s = double.parse(stdin.readLineSync()!);
+  
+  print("Enter is $s");
+
+  if(s>=40000)
+  {
+  s=s*20/100;
+  
+  print("bonus according to greater then 40000 is(According to your salary): $s"); 
+  }
+  else
+  {
+  s=s*10/100;
+  print("bonus according to less then 40000 is(According to your salary): $s");
+  }
+
+}
